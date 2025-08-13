@@ -36,7 +36,7 @@ export default function SDSForm() {
   const downloadPDF = () => {
     if (!smiles.trim()) return;
     // ✅ FIXED: Use /api/sds/pdf
-    window.open(`${API_BASE}/api/sds/pdf?smiles=${encodeURIComponent(smiles)}`, '_blank');
+    window.open(`${API_BASE}/api/sds/docx?smiles=${encodeURIComponent(smiles)}`, '_blank');
   };
 
   const downloadJSON = async () => {
@@ -85,7 +85,7 @@ export default function SDSForm() {
         <div>
           <div className="flex gap-3 mb-6">
             <button onClick={downloadPDF} className="flex-1 bg-green-600 text-white py-2 rounded hover:bg-green-700">
-              📄 Download PDF
+              📄 Download DOCX
             </button>
             <button onClick={downloadJSON} className="flex-1 bg-gray-600 text-white py-2 rounded hover:bg-gray-700">
               📥 Download JSON
