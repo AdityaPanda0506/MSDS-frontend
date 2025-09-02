@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaExclamationTriangle, FaSpinner, FaCheck, FaTimes, FaDownload, FaFlask, FaSearch, FaInfoCircle } from 'react-icons/fa';
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://msds-generation-2.onrender.com";
 
 export default function SDSGenerator() {
   const [smiles, setSmiles] = useState('');
